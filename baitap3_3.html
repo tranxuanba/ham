@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham nhap vao 2 tham so</title>
+</head>
+<body>
+<input id="number1" type="number" value="" placeholder="nhap vao so thu nhat">
+<input id="number2" type="number" value="" placeholder="nhap vao so thu hai">
+<button onclick="addNumbers()">ket qua</button>
+<script>
+    function addNumbers() {
+        let number1 = +document.getElementById("number1").value;
+        let number2 = +document.getElementById("number2").value;
+        if (number1 > number2) {
+            alert("so thu nhat lon hon so thu hai")
+        }else {
+            let sum = number1 + number2;
+            alert(sum);
+        }
+    }
+</script>
+</body>
+</html>

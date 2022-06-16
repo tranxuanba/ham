@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number">
+<button onclick="factorialCalculation()">result</button>
+<script>
+  // viết hàm tính giai thưaf của 1 số nguyên bất kỳ được đưa vào. gọi hàm vừa xây dựng được
+  function factorialCalculation() {
+      let factorial = 1;
+      let num = document.getElementById("number").value;
+      for (let i = 1; i <= num; i++) {
+          factorial = factorial * i;
+      }
+        document.write(factorial);
+  }
+</script>
+</body>
+</html>

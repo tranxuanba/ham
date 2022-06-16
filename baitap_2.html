@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi giua feet va maters</title>
+</head>
+<body>
+<script>
+    let foot = + prompt("moi nhap vao foot");
+    let meter = + prompt("moi nhap vao maters");
+    function footToMeter(foot) {
+        let meter = 0.305*foot;
+        return meter;
+    }
+    function meterToFoot(meter) {
+        let foot = 3.279*meter;
+        return foot;
+    }
+    footToMeter(foot);
+    meterToFoot(meter);
+    document.write(foot + "foot" + "= " + footToMeter(foot) + "meter" + "</br>");
+    document.write(meter + "meter" + "= " + meterToFoot(meter) + "foot");
+</script>
+</body>
+</html>

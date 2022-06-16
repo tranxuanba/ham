@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="number" id="circleArea">
+<button onclick="clickme()">result</button>
+<script>
+    //viết hàm tính diện tích, chu vi hình tròn. gọi hàm vừa được xây dựng.
+function clickme(raduis) {
+    let r = document.getElementById("circleArea").value;
+    let area = r*r*3.14;
+    let primeter = 2*r*3.14;
+    document.write("circle area la :" + area + "<br>");
+    document.write("circle primeter la : " + primeter);
+}
+</script>
+</body>
+</html>
